@@ -9,7 +9,7 @@ Este projecto foi apanhado com [Create React App](https://github.com/facebook/cr
 ## Entrar na pasta
 
 ```bash
-$ cd ..
+$ cd via-cep
 ```
 ## Scripts disponíveis
 

@@ -50,7 +50,7 @@ function App() {
         </button>
       </div>
       <main className='main'>
-        <h2>CEP:{cep.cep ? "-" : cep.cep}</h2>
+        <h2>CEP:{!cep.cep ? "-" : cep.cep}</h2>
         <span>Logradouro:{!cep.publicPlace ? "-" : cep.publicPlace}</span>
         <span>Municipio: {!cep.county ? "-" : cep.county}</span>
         <span>UF:{!cep.uf ? "-" : cep.uf}</span>

@@ -33,7 +33,12 @@ function App() {
         <input
           type="text"
           placeholder="Digite um cep..."
-          value={input}
+          value={
+            input
+            .replace(/\D/g, '')
+            .replace(/(\d{5})(\d)/, '$1-$2')
+            .replace(/(-\d{3})\d+?$/, '$1')}
+          maxLength={9}
           onChange={(e) => setInput(e.target.value)}
         />
 

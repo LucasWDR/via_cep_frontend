@@ -6,6 +6,11 @@ Este projeto foi realizado com react com ideia de buscar cep com API ViaCEP.
 
 Este projecto foi apanhado com [Create React App](https://github.com/facebook/create-react-app).
 
+## Entrar na pasta
+
+```bash
+$ cd ..
+```
 ## Scripts disponíveis
 
 No directório de projectos, pode correr:

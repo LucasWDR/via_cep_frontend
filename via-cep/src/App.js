@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './css/styles.css';
 
 function App() {
+
+  const [ input, setInput] = useState('');
+  
   return (
     <div className="container">
       <h1 className="title">Buscador CEP</h1>
@@ -10,9 +14,11 @@ function App() {
         <input
           type="text"
           placeholder="Digite um cep..."
+          value ={input}
+          onChange={(e) => setInput(e.target.value) }
         />
 
-        <button className="buttonSearch">
+        <button className="buttonSearch" /* onCLick={handleSearch} */>
           <FiSearch size={25} color="#FFF" />
         </button>
       </div>
